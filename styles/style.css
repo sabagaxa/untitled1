@@ -1,0 +1,106 @@
+body {
+    background-color:#F4D04E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    font-family: "Outfit", sans-serif;
+}
+
+.main {
+    background-color: #ffffff;
+    width: 334px;
+    height: 522px;
+    padding: 22px;
+    border-radius: 20px;
+    box-shadow: 8px 8px 1px 1px #000000;
+}
+
+.card-image {
+    width: 336px;
+    height: 200px;
+    border-radius: 12px;
+}
+
+
+.card-description-wrapper {
+    margin-top: 25px;
+}
+
+.card-image-wrapper {
+    border-radius: 4px;
+    padding: 6px;
+    background-color: #F4D04E;
+    width: 82px;
+    height: 29px;
+    color:#111111;
+    border:none;
+    margin-top: 20px;
+}
+
+
+.card-description {
+    max-width: 300px;
+    color: #6B6B6B;
+    margin-top: 30px;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.card-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 54px;
+}
+
+.card-price-wrapper, .card-countdown-wrapper {
+    display: flex;
+    gap: 8px;
+}
+
+.price-label {
+    color: hsl(178, 100%, 50%);
+    font-weight: 500;
+}
+
+.countdown-label {
+    color: hsl(215, 51%, 70%);
+}
+
+
+.card-author {
+    display: flex;
+    margin-top: -10px;
+    gap: 16px;
+    align-items: center;
+}
+
+.card-profile-picture {
+    width: 32px;
+    height: 32px;
+    border: 1px solid #ffffff;
+    border-radius: 100px;
+    display: flex;
+}
+
+.bio {
+    color: #111111;
+}
+
+.author-name {
+    color: #ffffff;
+}
+.card-title {
+    margin-top: 20px;
+    transition:0.3s;
+}
+
+.card-title:hover{
+    color: yellow;
+}
