@@ -1,106 +1,104 @@
-body {
-    background-color:#F4D04E;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
 * {
     margin: 0;
     padding: 0;
     position: relative;
-    font-family: "Outfit", sans-serif;
+    font-family: "Figtree", sans-serif;
 }
-
-.main {
-    background-color: #ffffff;
-    width: 334px;
-    height: 522px;
-    padding: 22px;
-    border-radius: 20px;
-    box-shadow: 8px 8px 1px 1px #000000;
-}
-
-.card-image {
-    width: 336px;
-    height: 200px;
-    border-radius: 12px;
-}
-
-
-.card-description-wrapper {
-    margin-top: 25px;
-}
-
-.card-image-wrapper {
-    border-radius: 4px;
-    padding: 6px;
-    background-color: #F4D04E;
-    width: 82px;
-    height: 29px;
-    color:#111111;
-    border:none;
-    margin-top: 20px;
-}
-
-
-.card-description {
-    max-width: 300px;
-    color: #6B6B6B;
-    margin-top: 30px;
-    font-weight: 300;
-    font-size: 18px;
-}
-
-.card-details {
+body {
     display: flex;
-    justify-content: space-between;
-    margin-top: 54px;
-}
-
-.card-price-wrapper, .card-countdown-wrapper {
-    display: flex;
-    gap: 8px;
-}
-
-.price-label {
-    color: hsl(178, 100%, 50%);
-    font-weight: 500;
-}
-
-.countdown-label {
-    color: hsl(215, 51%, 70%);
-}
-
-
-.card-author {
-    display: flex;
-    margin-top: -10px;
-    gap: 16px;
+    justify-content: center;
     align-items: center;
+    height: 100vh;
+    background-color: rgba(244, 208, 78, 1);
 }
-
-.card-profile-picture {
-    width: 32px;
-    height: 32px;
-    border: 1px solid #ffffff;
-    border-radius: 100px;
+.main-card {
+    padding: 24px;
+    background-color: #fff;
+    border-radius: 20px;
+    border: 1px solid rgba(17, 17, 17, 1);
+    box-shadow: 8px 8px 0 0 rgba(0, 0, 0, 1);
+}
+.card-image {
+    width: 100%;
+}
+@media (max-width: 576px) {
+    .card-image {
+        width: 279px;
+    }
+}
+.card-content {
     display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+    gap: 12px;
 }
-
-.bio {
-    color: #111111;
+.label {
+    padding: 4px 12px;
+    background-color: rgba(244, 208, 78, 1);
+    width: fit-content;
+    border-radius: 4px;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 21px;
+    color: rgba(17, 17, 17, 1);
 }
-
-.author-name {
-    color: #ffffff;
+@media (max-width: 576px) {
+    .label {
+        font-size: 12px;
+        line-height: 18px;
+    }
 }
-.card-title {
-    margin-top: 20px;
-    transition:0.3s;
+.date {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: rgba(17, 17, 17, 1);
 }
-
-.card-title:hover{
-    color: yellow;
+@media (max-width: 576px) {
+    .date {
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
+.title {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 36px;
+    color: rgba(17, 17, 17, 1);
+    transition: 0.3s;
+    cursor: pointer;
+    width: fit-content;
+}
+.title:hover {
+    color: rgba(244, 208, 78, 1);
+}
+@media (max-width: 576px) {
+    .title {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+.description {
+    max-width: 336px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: rgba(107, 107, 107, 1);
+}
+@media (max-width: 576px) {
+    .description {
+        max-width: 279px;
+        font-size: 14px;
+        line-height: 21px;
+    }
+}
+.author-wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+    gap: 12px;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 21px;
+    color: rgba(17, 17, 17, 1);
 }

@@ -1,42 +1,31 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog Preview Card</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+          rel="stylesheet">
 </head>
 <body>
-
-<div class="main">
-    <p></p>
+<div class="main-card">
     <figure>
-        <img class="card-image" src="./images/blog-image.svg" alt="image-equilibrium">
+        <img class="card-image" src="./images/blog-image.svg" alt="blog-image">
     </figure>
-    <div class="card-title-wrapper">
-        <button class="card-image-wrapper">learning</button>
-    </div>
-    <p class="card-description-wrapper">published 21 dec 2023</p>
-    <h2 class="card-title">Html & css foundation</h2>
-    <div>
-        <p class="card-description">these languages are the backbone of every website, defining structure, content, and presentation</p>
-    </div>
-    <div class="card-details">
-        <div class="card-price-wrapper">
-            <img src="./images/" alt="">
-            <p class="price-label"></p>
-        </div>
-        <div class="card-countdown-wrapper">
-            <img src="./images/" alt="">
-            <p class="countdown-label"></p>
-        </div>
-    </div>
-    <div class="separator"></div>
-    <figure class="card-author">
-        <img class="card-profile-picture" src="./images/author.svg" alt="image-avatar">
+    <div class="card-content">
+        <span class="label">Learning</span>
+        <span class="date">Published 21 Dec 2023</span>
+        <h1 class="title">HTML & CSS foundations</h1>
         <div>
-            <p class="bio">Greg Hooper <span class="author-name"></span></p>
+            <p class="description">These languages are the backbone of every website, defining structure, content, and presentation.</p>
         </div>
+    </div>
+    <figure class="author-wrapper">
+        <img src="./images/author.svg" alt="user-image">
+        <span>Greg Hooper</span>
     </figure>
 </div>
 </body>
